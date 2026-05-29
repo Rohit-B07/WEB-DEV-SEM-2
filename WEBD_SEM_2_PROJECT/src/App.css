@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1120;
+  color: white;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.dark {
+  background: #0b1120;
+  color: white;
+  min-height: 100vh;
+}
+
+.light {
+  background: #f4f4f4;
+  color: #111;
+  min-height: 100vh;
+}
+
+.light .navbar {
+  background: black;
+}
+
+.light .navbar h1 {
+  color: white;
+}
+
+.light nav a {
+  color: white;
+}
+
+.light .hero p {
+  color: #444;
+}
+
+.light .card {
+  background: white;
+  color: black;
+}
+
+.light .faq-item {
+  background: white;
+  color: black;
+}
+
+.light .chat-box {
+  background: white;
+  color: black;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h2 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  max-width: 900px;
+}
+
+.hero p {
+  font-size: 22px;
+  max-width: 700px;
+  line-height: 1.6;
+  color: #cfcfcf;
+}
+
+.btn {
+  margin-top: 25px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  background: #10a37f;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#features {
+  padding: 100px 60px;
+}
+
+#features h2 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  padding: 30px;
+  border-radius: 16px;
+  background: #1c2333;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #10a37f;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#chat {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#chat h2 {
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+
+.chat-box {
+  width: 80%;
+  max-width: 800px;
+  min-height: 250px;
+  margin: auto;
+  background: #1c2333;
+  border-radius: 15px;
+  padding: 25px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.chat-box p {
+  margin: 15px 0;
+}
+
+input {
+  width: 60%;
+  max-width: 500px;
+  padding: 14px;
+  margin-top: 25px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+#faq {
+  padding: 100px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#faq h2 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.faq-item {
+  background: #1c2333;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question span {
+  font-size: 30px;
+  color: #10a37f;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: black;
+  margin-top: 80px;
+}
+
+@media(max-width:768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .hero h2 {
+    font-size: 42px;
+  }
+
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 90%;
+  }
+
+}

@@ -1,0 +1,38 @@
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        .full-link {
+            display: block;
+            height: 100%;
+            background-image: url("IMG/BACKGROUND LEVELS.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-decoration: none;
+            color: white;
+            position: relative;
+        }
+ 
+        .title {
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            padding-top: 40px;
+        }
+
+        .tap {
+            position: absolute;
+            bottom: 40px;
+            width: 100%;
+            text-align: center;
+            font-size: 25px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
